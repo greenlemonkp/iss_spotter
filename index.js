@@ -32,7 +32,7 @@
 //   console.log('It worked! Returned coordinates:' , coordinates);
 // });
 
-const { nextISSTimesForMyLocation } = require('./iss');
+// const { nextISSTimesForMyLocation } = require('./iss');
 
 /** 
  * Input: 
@@ -54,10 +54,10 @@ const printPassTimes = function(passTimes) {
   }
 };
 
-nextISSTimesForMyLocation((error, passTimes) => {
-  if (error) {
-    return console.log("It didn't work!", error);
-  }
+// nextISSTimesForMyLocation((error, passTimes) => {
+//   if (error) {
+//     return console.log("It didn't work!", error);
+//   }
   // success, print out the deets!
   printPassTimes(passTimes);
-});
+
